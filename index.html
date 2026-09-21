@@ -15,16 +15,27 @@ Ricetta per AIWD3
 <body>
 <background-color: #f5f5dc;>
 <!-- LISTA DELLA SPESA -->
-<h2>Ingredienti necessari:</h2><ul> 
-    <li>Mele 700g</li>
-    <li>Farina 00  250g</li>
-    <li>2 uova</li>
-    <li>Burro 100g</li>
-    <li>un limone</li>
-    <li>zucchero 200g</li>
-    <li>latte 150ml</li>
-    <li>cannella in polvere mezzo cucchiaino</li>
-    <li>zucchero a velo q.b.</li>
+<h2>Ingredienti necessari</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Ingrediente</th>
+            <th>Quantità</th>
+            <th>Utilizzo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Mele</td><td>700 g</td><td>Sbucciate e tagliate</td></tr>
+        <tr><td>Farina 00</td><td>250 g</td><td>Setacciata</td></tr>
+        <tr><td>Uova</td><td>2</td><td>Montate con lo zucchero</td></tr>
+        <tr><td>Burro</td><td>100 g</td><td>Tiepido</td></tr>
+        <tr><td>Zucchero</td><td>200 g</td><td>Con le uova</td></tr>
+        <tr><td>Cannella</td><td>Q.B.</td><td>Nell'impasto</td></tr>
+        <tr><td>Limone</td><td>1</td><td>Scorza grattugiata</td></tr>
+        <tr><td>Lievito</td><td>Q.B.</td><td>Setacciato</td></tr>
+        <tr><td>Latte</td><td>Q.B.</td><td>Aggiunto lentamente</td></tr>
+    </tbody>
+</table>
     
     
  <h2> Preparazione:  </h2>  </ul>
@@ -46,10 +57,34 @@ Ricetta per AIWD3
     height="300">
 </ol>
 <div>                   
-<strong>Consiglio per la conservazione:</strong>
-<p>Conserva la torta in un luogo fresco e asciutto, lontano da fonti di calore e umidità.</p>
+<div class="consiglio">
+    <strong>Consiglio per la conservazione:</strong>
+    <p>Conserva la torta in un luogo fresco e asciutto, lontano da fonti di calore e umidità.</p>
 </div>
-<span>Buon appetito!</span>
+<span class="appetito">Buon appetito!</span>
+<button type="button" onclick="window.print()">
+    🖨️ Stampa la ricetta
+</button>
+<section class="feedback">
+    <h2>Suggerisci un'altra ricetta</h2>
+
+    <label for="ricetta">Nome della ricetta:</label>
+    <input
+        type="text"
+        id="ricetta"
+        name="ricetta"
+        placeholder="Es. Crostata di mele">
+
+    <label for="suggerimento">Descrivi la ricetta:</label>
+    <textarea
+        id="suggerimento"
+        name="suggerimento"
+        rows="5"
+        placeholder="Scrivi ingredienti, preparazione e consigli..."></textarea>
+
+    <button type="button">Invia suggerimento</button>
+</section>
 <footer>
     <p>&copy; 2026 Ricetta Torta di Mele originale, Tutti i diritti riservati - &copy </p> 
     </footer>
+    
