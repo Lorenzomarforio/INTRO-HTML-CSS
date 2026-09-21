@@ -1,13 +1,12 @@
 body {
     font-family: Helvetica, sans-serif;
-    margin: 5px;
-    padding: 3px;
+    margin: 0px;
+    padding: 0px;
     background-color: #f4f4f4;
 }
 p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #c40e0e;
+    font-size: 12px;
+
 }
 h1 {
     font-size: 24px;
@@ -17,3 +16,17 @@ h2 {
     font-size: 20px;
     color: #c40e0e;
 }     
+header {
+    padding: 12px;
+    background-color: #008b8b;
+    color: white;
+}
+
+header a {
+    color: #0645ad;
+    margin-left: 4px;
+}
+.recipe-image {
+    float: right;
+    margin: 0 20px 20px 20px;
+}
